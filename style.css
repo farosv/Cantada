@@ -29,14 +29,17 @@ h1 {
     font-weight: bold;
     color: #000000;
 }
-
 .opcoes {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
 }
 button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px;
     font-size: 16px;
     border: none;
     background-color: white;
@@ -67,6 +70,8 @@ button:hover {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
 }
 .verde .popup-content {
     background-color: #28a745;
@@ -80,13 +85,30 @@ button:hover {
     margin-top: 10px;
     background-color: #fff;
     color: black;
+    width: 100%;
 }
 .popup-content button:hover {
     background-color: #ccc;
 }
 .foto-popup {
-    width: 380px;
-    height: 360px;
-    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
     margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .pergunta {
+        font-size: 1.2em;
+    }
+    .opcoes button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .popup-content {
+        width: 90%;
+    }
 }
