@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/coracao.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Olá gatinha, tudo bem?</h1>
+    <div class="container">
+        <p class="pergunta">Qual cantada você acha que é a minha?</p>
+        <p class="comentario">Ps: Escolha um e boa sorte kkk</p>
+        <div class="opcoes">
+            <button onclick="cantadaErrada()">Gata, você deve ser um loop infinito, porque eu nunca quero sair de você 😜</button>
+            <button onclick="cantadaErrada()">Nosso amor é tipo um banco de dados, sempre armazenado no coração 💾😘</button>
+            <button onclick="cantadaCerta()">Você é o CSS do meu HTML 🎨😝</button>
+            <button onclick="cantadaErrada()">Se beleza fosse um bug, você nunca precisaria de debugging 😵‍💫</button>
+        </div>
+    </div>
+    
+    <div id="popupCerto" class="popup verde">
+        <div class="popup-content">
+            <p>Você é o código perfeito para esse programador 😍✅</p>
+            <img src="img/img_1.jpg" alt="Nossa foto" class="foto-popup">
+            <button onclick="fecharPopup('popupCerto')">Fechar</button>
+        </div>
+    </div>
+    
+    <div id="popupErrado" class="popup vermelho">
+        <div class="popup-content">
+            <p>Hmmm... tenta outra opção! 😜❌</p>
+            <button onclick="fecharPopup('popupErrado')">Fechar</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
