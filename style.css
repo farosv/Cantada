@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #df2f2f;
+    padding: 50px;
+}
+h1 {
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    font-style: bold;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.pergunta {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.comentario {
+    font-size: 1em;
+    font-weight: bold;
+    color: #000000;
+}
+.opcoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+}
+.verde .popup-content {
+    background-color: #28a745;
+    color: white;
+}
+.vermelho .popup-content {
+    background-color: #dc3545;
+    color: white;
+}
+.popup-content button {
+    margin-top: 10px;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+}
+.popup-content button:hover {
+    background-color: #ccc;
+}
+.foto-popup {
+    width: 290px;
+    height: 230px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .pergunta {
+        font-size: 1.2em;
+    }
+    .opcoes button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .popup-content {
+        width: 90%;
+    }
+}
